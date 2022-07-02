@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?9nltb3');
+    src: url('../fonts/icomoon.eot?9nltb3#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?9nltb3') format('truetype'), url('../fonts/icomoon.woff?9nltb3') format('woff'), url('../fonts/icomoon.svg?9nltb3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html,
+body,
+div,
+img,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#imgModule {
+    display: none;
+}
+
+#imgDefault {
+    cursor: pointer;
+    width: 1000px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.imgItem {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    padding: 3px;
+    border: 1px solid rgb(150, 150, 150);
+    transition: all 0.3s;
+}
+
+.imgItem:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.mask {
+    background: rgb(0, 0, 0);
+    opacity: .8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lightBoxContent {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    background: rgb(0, 0, 0, 0.2);
+}
+
+#imgLoader {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px 0 0 -16px;
+    display: none;
+}
+
+#imgLight {
+    width: 80%;
+    height: 100%;
+    -webkit-animation: change 1s;
+    animation: change 1s;
+}
+
+#imgModule .btn {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.lightBoxSprite {
+    background-image: url(../images/imgIcons.png);
+    background-repeat: no-repeat;
+}
+
+#lightBoxPrev {
+    left: 10px;
+    background-position: 2px center;
+}
+
+#lightBoxNext {
+    right: 10px;
+    background-position: -42px center;
+}
+
+.closeBtn {
+    width: 35px;
+    height: 35px;
+    background-position: -100px center;
+    position: absolute;
+    top: 15px;
+    right: 75px;
+    cursor: pointer;
+}
+
+.lightBoxPagination {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.lightBoxPagination span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.lightBoxPagination span.current {
+    background: #fff;
+}
+
+@keyframes change {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #imgDefault {
+        cursor: pointer;
+        width: 96%;
+        margin: auto;
+        margin-top: -20px;
+    }
+    .imgItem {
+        width: 100px;
+        height: 150px;
+        margin-right: 5px;
+        padding: 3px;
+        border: 1px solid rgb(150, 150, 150);
+    }
+    #imgLight {
+        width: 80%;
+        -webkit-animation: change 1s;
+        animation: change 1s;
+        margin-top: 50%;
+    }
+    .lightBoxContent {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        text-align: center;
+        top: -50px;
+        background: rgb(0, 0, 0, 0.8);
+    }
+    #imgModule .btn {
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        cursor: pointer;
+    }
+    .lightBoxPagination {
+        position: absolute;
+        left: 0;
+        bottom: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    .mask {
+        background: rgb(0, 0, 0);
+        opacity: .8;
+        filter: alpha(opacity=80);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .closeBtn {
+        width: 35px;
+        height: 35px;
+        background-position: -100px center;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        cursor: pointer;
+    }
+}
