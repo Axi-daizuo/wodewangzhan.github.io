@@ -1,0 +1,31 @@
+body, html, div,img, label, p, h1, h2, h3, h4, ul,
+li,  form, a
+{margin: 0; padding: 0; border: 0; outline: none;}
+body {	font-family: "宋体";font-size: 14px;color:#000000;line-height: 20px;text-align:left;}
+
+a {color: #000000;} 
+A:link {TEXT-DECORATION: none;}
+A:visited {TEXT-DECORATION: none;}
+
+ul,li{list-style-type:none;}
+.clearit{clear:both;}
+
+.da {width:1000px; margin:0 auto; background:#faf6f3;}
+.ban {width:1000px; height:390px;}
+.nav {width:1000px; height:50px; background:#7e0001;}
+.nav li {width:166.66px; float:left; text-align:center; line-height:50px;}
+.nav li a  {width:166.66px;  height:50px; display:block; font-size:16px; color:#FFF; font-weight:bold;}
+.nav li A:hover { background:#d0191b;}
+.xia {padding:20px}
+.xia h2 { text-align:center; color:#7e0001; padding-top:10px; padding-bottom:20px;}
+.zi p { line-height:30px; text-indent:2em;}
+.xia h3 {color:#7e0001; }
+.tu li {width:333.33px; float:left; text-align:center; margin-top:20px; }
+.foot {width:1000px; height:70px; background:#7e0001; text-align:center; line-height:70px; font-size:16px; color:#FFF; font-weight:bold;}
+
+.zi li { height:30px; border-bottom:1px dashed #666666; margin-top:15px; line-height:30px;}
+.zi li  A:hover  { color:#7e0001;}
+.di li {width:300px; float:left;  line-height:25px}
+.di li span { font-size:12px;}
+
+.huo li {width:465px; float:left;}
